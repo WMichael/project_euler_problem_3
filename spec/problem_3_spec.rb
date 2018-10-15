@@ -16,7 +16,19 @@ describe "Problem 3" do
     expect(@problem3.prime? 9).to eq false
     expect(@problem3.prime? 15).to eq false
     expect(@problem3.prime? 17).to eq true
-    expect(@problem3.prime? 1000).to eq false
+  end
+
+  it "Should check whether largestPrimeFactor method is present" do
+    expect(@problem3).to respond_to :largestPrimeFactor
+  end
+
+  it "Should get the largest prime factor" do
+    expect(@problem3.largestPrimeFactor 5).to be_kind_of Integer
+    expect(@problem3.largestPrimeFactor 7).to eq 7
+    expect(@problem3.largestPrimeFactor 4).to eq 3
+    expect(@problem3.largestPrimeFactor 20).to eq 19
+    expect(@problem3.largestPrimeFactor 50).to eq 47
+    expect(@problem3.largestPrimeFactor 13195).to eq 13187
   end
 
 end

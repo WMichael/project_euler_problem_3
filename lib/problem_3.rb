@@ -20,4 +20,25 @@ class Problem_3
     end
   end
 
+  def largestPrimeFactor range
+    # Current largest prime number
+    largestPrime = 0
+
+    #If number is prime then return it
+    if prime? range
+      range
+    else
+      # Loop through 1 to the number checking if prime. If prime number is > largest number then set largest number to that prime.
+      for i in 1...range do
+        if prime? i
+          if i > largestPrime
+            largestPrime = i
+          end
+        end
+      end
+      # Return largest prime number.
+      puts largestPrime
+      largestPrime
+    end
+  end
 end
