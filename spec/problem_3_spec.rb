@@ -16,6 +16,7 @@ describe "Problem 3" do
     expect(@problem3.prime? 9).to eq false
     expect(@problem3.prime? 15).to eq false
     expect(@problem3.prime? 17).to eq true
+    expect(@problem3.prime? 1000).to eq false
   end
 
 end
