@@ -29,6 +29,7 @@ describe "Problem 3" do
     expect(@problem3.largestPrimeFactor 20).to eq 19
     expect(@problem3.largestPrimeFactor 50).to eq 47
     expect(@problem3.largestPrimeFactor 13195).to eq 13187
+    expect(@problem3.largestPrimeFactor 600851475143).to eq 3
   end
 
 end

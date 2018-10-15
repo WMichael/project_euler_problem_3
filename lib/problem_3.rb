@@ -37,7 +37,6 @@ class Problem_3
         end
       end
       # Return largest prime number.
-      puts largestPrime
       largestPrime
     end
   end
